@@ -31,13 +31,9 @@ a { color: inherit; text-decoration: none; }
   border-bottom: 1px solid var(--line);
 }
 .nav { min-height: 76px; display: flex; align-items: center; justify-content: space-between; }
-.brand { display: inline-flex; align-items: center; gap: 10px; color: #fff; font-size: 16px; letter-spacing: .02em; }
-.brand b { font-weight: 400; opacity: .65; }
-.brand-mark {
-  display: grid; place-items: center; width: 34px; height: 34px;
-  border: 1px solid rgba(98,230,198,.65); border-radius: 10px;
-  color: var(--accent); font-weight: 800;
-}
+.brand { display: inline-flex; align-items: center; color: #fff; }
+.company-logo { display: block; width: 150px; height: 52px; object-fit: contain; object-position: center; border-radius: 8px; }
+.footer-company-logo { width: 175px; height: 62px; }
 .nav-links { display: flex; gap: 30px; color: #c7cfdd; font-size: 14px; }
 .nav-links a:hover { color: #fff; }
 .menu-toggle { display: none; border: 0; background: transparent; color: #fff; font-size: 24px; }
@@ -135,7 +131,11 @@ a { color: inherit; text-decoration: none; }
 .window-bar { height: 38px; display: flex; gap: 6px; align-items: center; padding-left: 15px; border-bottom: 1px solid rgba(255,255,255,.08); }
 .window-bar i { width: 7px; height: 7px; border-radius: 50%; background: #5e687a; }
 .vault-content { padding: 48px 35px; color: #fff; text-align: center; }
-.vault-shield { width: 72px; height: 72px; margin: 0 auto 18px; display: grid; place-items: center; border-radius: 20px; color: var(--accent); background: rgba(98,230,198,.10); }
+.vault-logo { width: 92px; height: 92px; margin: 0 auto 18px; display: block; object-fit: cover; border-radius: 22px; box-shadow: 0 12px 30px rgba(0,0,0,.30); }
+.floating-product-logo { width: 46px; height: 46px; flex: 0 0 auto; object-fit: cover; border-radius: 12px; margin-bottom: 10px; }
+.card-small { display: flex; align-items: center; gap: 14px; }
+.card-small .floating-product-logo { margin-bottom: 0; }
+.card-small div { display: grid; gap: 2px; }
 .vault-content small { color: #8995aa; letter-spacing: .2em; font-size: 9px; }
 .vault-content strong { display: block; margin-top: 7px; font-size: 24px; }
 .vault-lines { margin-top: 30px; display: grid; gap: 10px; }
@@ -166,6 +166,8 @@ a { color: inherit; text-decoration: none; }
 .copyright { border-top: 1px solid var(--line); margin-top: 35px; padding-top: 18px; color: #667185; font-size: 12px; }
 
 @media (max-width: 850px) {
+  .company-logo { width: 132px; height: 46px; }
+  .footer-company-logo { width: 155px; height: 55px; }
   .hero-grid, .product-card, .two-column { grid-template-columns: 1fr; }
   .hero { min-height: auto; }
   .hero-visual { min-height: 450px; }
