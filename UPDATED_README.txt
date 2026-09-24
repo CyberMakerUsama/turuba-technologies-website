@@ -1,15 +1,17 @@
-TURUBA Technologies Website — Updated
+TURUBA Technologies Website — Release Update
 
-Updates made:
-- Renamed user-facing product branding from SecureVault to Security Vault.
-- Updated product positioning to reflect the current feature set without making absolute security claims.
-- Refreshed page title and SEO metadata.
-- Added Privacy Policy and Terms of Service pages.
-- Added footer links to the legal pages when a footer was present.
-- Added accessible labeling for the company contact email.
-- Kept the existing website structure/design rather than rebuilding it.
+Updated for Security Vault public/release preparation.
 
-Before public launch:
-- Replace/verify any placeholder production Security Vault URL.
-- Have the Privacy Policy and Terms of Service reviewed for the actual deployed service, data practices, jurisdiction, and legal requirements.
-- Configure hosting, custom domain, HTTPS, security headers, and any analytics/consent tooling as applicable.
+Changes:
+- Replaced placeholder support@turubatechnologies.com contact addresses with support@turubatechnologies.com.
+- Expanded Security Vault feature list to reflect the current tested product.
+- Updated Privacy Policy, Terms and Security pages.
+- Added dedicated Support page.
+- Added dedicated Account Deletion page and deletion request flow.
+- Added robots.txt and sitemap.xml.
+- Added canonical/Open Graph metadata to key pages.
+- Updated TURUBA Technologies logo asset to remove the extra Gemini-style sparkle mark.
+- Kept the existing visual design and product-launch structure.
+
+Important:
+Platform submissions still require accurate Play Console/App Store Connect declarations and metadata. Website changes alone do not complete Data Safety, App Privacy, content rating, target audience, review-account or store-listing requirements.

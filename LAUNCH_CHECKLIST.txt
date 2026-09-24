@@ -1,24 +1,35 @@
 TURUBA Technologies / Security Vault — Launch Checklist
 
-Website pages added:
-- About
-- Privacy Policy
-- Terms of Service
-- Security / Responsible Disclosure
-- Contact
+Website updates in this release:
+- Company support email: support@turubatechnologies.com
+- Security Vault feature overview updated
+- Privacy Policy expanded for current product data flows
+- Terms updated for current Security Vault features
+- Security / responsible disclosure page updated
+- Dedicated Support page added
+- Dedicated Account Deletion page added
+- robots.txt and sitemap.xml added
+- Canonical/Open Graph metadata added to key pages
+- TURUBA Technologies logo updated to remove the extra Gemini-style sparkle mark
 
-Before public launch, confirm:
-1. Legal entity/company details and registered address, if required, are reflected where appropriate.
-2. Privacy Policy matches the FINAL production data flows and every third-party provider actually used.
-3. Terms reflect the final pricing, subscription, cancellation and refund model if paid plans are enabled.
-4. Contact/support email is monitored.
-5. Security contact/disclosure process is monitored.
-6. Production Security Vault URL is linked from the website.
-7. HTTPS is active on the company website and app/API domains.
-8. Vercel custom-domain configuration is correct.
-9. VPS deployment uses production secrets, PostgreSQL, Redis, Gunicorn, Nginx and TLS.
-10. Backup/recovery process is tested.
-11. Google Play listing includes the final Privacy Policy URL and required Data safety/app-content disclosures.
-12. Android app has the same public-facing product name: Security Vault.
-13. Remove development/test credentials and secrets from release artifacts.
-14. Final legal review before commercial/public launch is strongly recommended.
+Play Store / App Store website support:
+- Privacy Policy URL: https://turubatechnologies.com/privacy.html
+- Support URL: https://turubatechnologies.com/support.html
+- Account deletion URL: https://turubatechnologies.com/account-deletion.html
+- Company/marketing URL: https://turubatechnologies.com/
+
+Platform-side items still completed in Play Console/App Store Connect (not controlled by this static website):
+1. Accurate developer/account verification information.
+2. Google Play Data Safety and app-content declarations.
+3. Google Play app listing, screenshots, content rating, target audience and review access.
+4. Google Play account deletion declaration.
+5. Apple App Privacy data declarations and privacy URL.
+6. Apple Support URL, screenshots, description, keywords, age rating and App Review information when an iOS build is submitted.
+7. Demo/reviewer account and test instructions where login is required.
+
+Before final commercial launch, confirm:
+- Privacy Policy matches every production provider and actual data flow.
+- Support email is monitored.
+- Production Security Vault URL is active and HTTPS is enabled.
+- Backup/recovery process is tested.
+- Final legal review is completed if required.
