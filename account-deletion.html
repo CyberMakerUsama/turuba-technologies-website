@@ -8,6 +8,12 @@
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://turubatechnologies.com/account-deletion.html">
   <link rel="stylesheet" href="style.css">
+<style>
+      .deletion-form { max-width: 620px; margin: 1.5rem 0 1rem; display: grid; gap: .65rem; }
+      .deletion-form input[type="email"], .deletion-form input[type="text"] { width: 100%; box-sizing: border-box; padding: .75rem; border: 1px solid #cfd6df; border-radius: 6px; font: inherit; }
+      .checkbox-label { display: flex; gap: .55rem; align-items: flex-start; margin: .5rem 0; }
+      .checkbox-label input { margin-top: .25rem; }
+    </style>
 </head>
 <body>
   <main class="legal-page">
@@ -30,10 +36,29 @@
       <li>We will verify the request and process the deletion.</li>
     </ol>
 
-    <p>
-      <a class="btn btn-primary" href="mailto:support@turubatechnologies.com?subject=Security%20Vault%20Account%20Deletion%20Request&body=Please%20delete%20my%20Security%20Vault%20account.%0A%0ARegistered%20email%3A%20%0AUsername%20(if%20known)%3A%20">
-        Request account deletion
-      </a>
+    <form class="deletion-form" action="https://formsubmit.co/support@turubatechnologies.com" method="POST">
+      <input type="hidden" name="_subject" value="Security Vault Account Deletion Request">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="true">
+      <input type="hidden" name="_next" value="https://turubatechnologies.com/account-deletion.html?submitted=1">
+      <input type="text" name="_honey" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
+
+      <label for="registered-email"><strong>Registered email address</strong></label>
+      <input id="registered-email" name="registered_email" type="email" required autocomplete="email" placeholder="you@example.com">
+
+      <label for="username"><strong>Username (if known)</strong></label>
+      <input id="username" name="username" type="text" autocomplete="username" placeholder="Your Security Vault username">
+
+      <label class="checkbox-label">
+        <input type="checkbox" name="deletion_confirmation" value="I request deletion of my Security Vault account and associated data" required>
+        I request deletion of my Security Vault account and associated data.
+      </label>
+
+      <button class="btn btn-primary" type="submit">Request account deletion</button>
+    </form>
+
+    <p id="deletion-submitted" role="status" hidden>
+      Your deletion request has been submitted. TURUBA Technologies will verify the request and contact you using the registered email address.
     </p>
 
     <p>
