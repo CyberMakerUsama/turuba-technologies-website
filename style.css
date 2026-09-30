@@ -251,6 +251,63 @@ a { color: inherit; text-decoration: none; }
   font-size: 12px;
 }
 
+/* Security Vault product landing page */
+.vault-page { background: #fff; color: #101522; }
+.vault-hero {
+  padding: 155px 0 90px;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 82% 35%, rgba(124,124,255,.19), transparent 29%),
+    radial-gradient(circle at 48% 100%, rgba(98,230,198,.10), transparent 30%),
+    var(--bg);
+}
+.vault-hero-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 70px; align-items: center; }
+.vault-hero-copy h1 { max-width: 740px; margin: 0 0 22px; font-size: clamp(44px, 6vw, 72px); line-height: 1; letter-spacing: -.055em; }
+.vault-hero-copy > p { max-width: 650px; color: var(--muted); font-size: 18px; }
+.vault-hero-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 32px; }
+.vault-hero-actions .btn span, .vault-cta .btn span { margin-left: 7px; }
+.vault-hero-copy .vault-availability { margin-top: 20px; font-size: 13px; }
+.vault-availability a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+.vault-hero-card { display: grid; gap: 16px; padding: 38px; border: 1px solid rgba(255,255,255,.13); border-radius: 26px; background: rgba(17,26,43,.82); box-shadow: 0 30px 80px rgba(0,0,0,.3); }
+.vault-hero-card img { display: block; width: 96px; height: 96px; object-fit: cover; border-radius: 22px; box-shadow: 0 12px 30px rgba(0,0,0,.3); }
+.vault-hero-label { color: #8995aa; font-size: 10px; font-weight: 800; letter-spacing: .2em; }
+.vault-hero-card > strong { margin-top: -12px; color: #fff; font-size: 27px; }
+.vault-hero-item { display: flex; gap: 10px; align-items: center; color: #c5cedc; font-size: 14px; }
+.vault-hero-item span { color: var(--accent); font-weight: 800; }
+.vault-section { padding: 105px 0; }
+.vault-section-heading { max-width: 760px; margin-bottom: 42px; }
+.vault-section-heading h2, .vault-security-grid h2, .vault-cta h2 { margin: 0 0 16px; font-size: clamp(36px, 4.5vw, 54px); line-height: 1.04; letter-spacing: -.045em; }
+.vault-section-heading > p { color: #687286; font-size: 17px; }
+.vault-feature-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.vault-feature-card { min-height: 205px; padding: 28px; border: 1px solid #e3e7ee; border-radius: 20px; background: #f8fafc; }
+.vault-feature-mark { color: #0d9f82; font-size: 12px; font-weight: 850; letter-spacing: .12em; }
+.vault-feature-card h3 { margin: 24px 0 8px; font-size: 20px; letter-spacing: -.02em; }
+.vault-feature-card p { margin: 0; color: #687286; font-size: 14px; }
+.vault-security-section { padding: 92px 0; background: var(--bg); color: #fff; }
+.vault-security-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 80px; align-items: start; }
+.vault-security-copy { color: #a8b1c2; font-size: 16px; }
+.vault-security-copy p:first-child { margin-top: 0; }
+.vault-security-copy a:not(.vault-inline-link), .vault-faq-list a { color: #087b67; text-decoration: underline; text-underline-offset: 3px; }
+.vault-security-copy a:not(.vault-inline-link) { color: var(--accent); }
+.vault-inline-link { display: inline-flex; gap: 8px; margin-top: 8px; color: var(--accent); font-weight: 800; }
+.vault-faq-section { background: #f8fafc; }
+.vault-faq-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 70px; align-items: start; }
+.vault-faq-grid .vault-section-heading { margin-bottom: 0; }
+.vault-faq-list { display: grid; gap: 12px; }
+.vault-faq-list details { padding: 20px 22px; border: 1px solid #e2e7ef; border-radius: 14px; background: #fff; }
+.vault-faq-list summary { color: #101522; font-weight: 750; cursor: pointer; }
+.vault-faq-list details p { margin: 13px 0 0; color: #687286; font-size: 14px; }
+.vault-cta-section { padding: 82px 0; background: #edf8f5; }
+.vault-cta { display: flex; align-items: center; justify-content: space-between; gap: 44px; }
+.vault-cta p { max-width: 620px; color: #697487; }
+
+@media (max-width: 850px) {
+  .vault-hero-grid, .vault-security-grid, .vault-faq-grid { grid-template-columns: 1fr; }
+  .vault-hero-grid, .vault-security-grid, .vault-faq-grid { gap: 38px; }
+  .vault-hero-card { max-width: 560px; }
+  .vault-feature-grid { grid-template-columns: 1fr 1fr; }
+}
+
 @media (max-width: 850px) {
   .company-logo { width: 132px; height: 46px; }
   .footer-company-logo { width: 155px; height: 55px; }
@@ -285,5 +342,12 @@ a { color: inherit; text-decoration: none; }
   .preview-row { grid-template-columns: 1fr; }
   .footer-links-grid { grid-template-columns: 1fr; }
   .section { padding: 80px 0; }
+  .vault-hero { padding-top: 125px; padding-bottom: 65px; }
+  .vault-hero-copy h1 { font-size: 46px; }
+  .vault-hero-card { padding: 28px; }
+  .vault-feature-grid { grid-template-columns: 1fr; }
+  .vault-feature-card { min-height: auto; }
+  .vault-section, .vault-security-section, .vault-cta-section { padding: 75px 0; }
+  .vault-cta { align-items: flex-start; flex-direction: column; }
 }
 
