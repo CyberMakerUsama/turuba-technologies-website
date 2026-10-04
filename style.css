@@ -849,3 +849,19 @@ main.legal-page { background: #fff; border-color: #e2e8f0; }
   .app-screenshot-media { min-height: 430px; }
 }
 
+
+/* Product education and visible breadcrumbs */
+.breadcrumbs { display: flex; flex-wrap: wrap; gap: 9px; align-items: center; margin-bottom: 26px; color: #58687c; font-size: 13px; }
+.breadcrumbs a { text-decoration: underline; text-underline-offset: 3px; }
+.breadcrumbs-dark { color: #a8b1c2; }
+.breadcrumbs-dark a { color: #62e6c6; }
+.resource-section { background: #f4f7fb; }
+.resource-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.resource-card { display: block; padding: 30px; border: 1px solid #dce4ed; border-radius: 20px; background: #fff; color: #15243a; }
+.resource-card h3 { margin: 0 0 12px; font-size: 23px; line-height: 1.25; }
+.resource-card p { color: #5d6d83; }
+.resource-card span { color: #087d70; font-weight: 750; }
+.resource-card:hover, .resource-card:focus-visible { border-color: #087d70; }
+.guide-page h3 { color: #203149; font-size: 18px; line-height: 1.4; }
+.guide-page .guide-byline { margin-top: 36px; padding-top: 18px; border-top: 1px solid #e2e8f0; font-size: 13px; }
+@media (max-width: 650px) { .resource-grid { grid-template-columns: 1fr; } }
