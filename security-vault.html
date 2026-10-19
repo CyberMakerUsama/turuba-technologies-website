@@ -55,7 +55,7 @@
       "featureList": [
         "Password management",
         "Password generation",
-        "Secure file storage",
+        "Encrypted file storage and in-app preview",
         "Security code storage",
         "Two-factor authentication",
         "Active-session management",
@@ -115,13 +115,14 @@
           <nav class="breadcrumbs breadcrumbs-dark" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span aria-current="page">Security Vault</span></nav>
           <div class="eyebrow">A TURUBA TECHNOLOGIES PRODUCT</div>
           <h1>Security Vault password manager.</h1>
-          <p>Security Vault by TURUBA Technologies helps you manage passwords, generate new credentials, store backup and recovery codes, and organize sensitive files. The Android app also includes Secure Notes for private notes and Money Ledger to track money lent and received.</p>
+          <p>Security Vault by TURUBA Technologies helps you manage passwords, generate new credentials, store backup and recovery codes, and organize encrypted files. Use Secure Notes for private notes and Money Ledger to track money lent, borrowed and repaid on Android or the web.</p>
           <div class="vault-hero-actions">
             <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.turubatechnologies.securityvault" target="_blank" rel="noopener noreferrer" aria-label="Download Security Vault on Google Play">Download on Google Play <span aria-hidden="true">↗</span></a>
             <a class="btn btn-primary" href="https://vps.turubatechnologies.com/register" target="_blank" rel="noopener noreferrer">Create your vault <span aria-hidden="true">↗</span></a>
             <a class="btn btn-secondary" href="support.html">Get product support</a>
           </div>
           <p class="vault-availability">Available online at <a href="https://vps.turubatechnologies.com" target="_blank" rel="noopener noreferrer">vps.turubatechnologies.com</a></p>
+          <p class="vault-availability">Follow us on <a href="https://www.instagram.com/turubatechnologies" target="_blank" rel="noopener noreferrer">Instagram @turubatechnologies ↗</a></p>
         </div>
         <div class="vault-hero-card" aria-label="Security Vault product overview">
           <img src="assets/security-vault-logo.png" alt="Security Vault app logo" width="96" height="96">
@@ -130,6 +131,7 @@
           <div class="vault-hero-item"><span aria-hidden="true">✓</span> Passwords and credentials</div>
           <div class="vault-hero-item"><span aria-hidden="true">✓</span> Encrypted secure files</div>
           <div class="vault-hero-item"><span aria-hidden="true">✓</span> Protected security codes</div>
+          <div class="vault-hero-item"><span aria-hidden="true">✓</span> Secure Notes and Money Ledger</div>
         </div>
       </div>
     </section>
@@ -155,7 +157,7 @@
           <article class="vault-feature-card">
             <span class="vault-feature-mark" aria-hidden="true">03</span>
             <h3>Secure file storage</h3>
-            <p>Keep sensitive files in encrypted storage with protected access.</p>
+            <p>Store images, PDFs and text files with encrypted storage and protected access. Preview supported files in the app without choosing a separate download.</p>
           </article>
           <article class="vault-feature-card">
             <span class="vault-feature-mark" aria-hidden="true">04</span>
@@ -180,12 +182,12 @@
           <article class="vault-feature-card" id="secure-notes">
             <span class="vault-feature-mark" aria-hidden="true">08</span>
             <h3>Secure Notes</h3>
-            <p>Keep private notes in the Android app. Organize them with categories and tags, pin important notes, and search when you need them.</p>
+            <p>Keep private notes on Android or the web. Organize them with categories and tags, pin important notes, and search when you need them.</p>
           </article>
           <article class="vault-feature-card" id="money-ledger">
             <span class="vault-feature-mark" aria-hidden="true">09</span>
             <h3>Money Ledger</h3>
-            <p>Track money lent and received in the Android app. Keep personal money records together, including the person, amount and notes for each entry.</p>
+            <p>Track money lent or borrowed on Android or the web. Record due dates and repayments, then check the remaining balance for each entry. Money Ledger does not send payments.</p>
           </article>
         </div>
       </div>
@@ -241,7 +243,8 @@
           <h2>Understand the protections behind your vault.</h2>
         </div>
         <div class="vault-security-copy">
-          <p>Security Vault uses password hashing and encryption mechanisms for vault data and files, and production web/API communication uses HTTPS. Security controls can reduce risk, but no online service can promise absolute security.</p>
+          <p>Account and master passwords are stored as bcrypt hashes. Saved passwords, security codes, notes, money entries and file contents use server-side Fernet encryption. Fernet uses AES-128 for encryption and HMAC-SHA-256 to detect changes to encrypted data. Production web and API communication uses HTTPS.</p>
+          <p>The service holds the encryption key and decrypts vault content when you access it. This is not end-to-end or zero-knowledge encryption; someone with access to both stored data and the server key could technically read it. These controls reduce risk but cannot guarantee absolute security.</p>
           <p>Read the <a href="security.html">Security page</a> for current security controls and responsible disclosure information, or review the <a href="privacy.html">Privacy Policy</a> to learn how information is handled.</p>
           <a class="vault-inline-link" href="https://vps.turubatechnologies.com" target="_blank" rel="noopener noreferrer">Open Security Vault <span aria-hidden="true">↗</span></a>
         </div>
@@ -263,15 +266,23 @@
 
           <details>
             <summary>What is Security Vault?</summary>
-            <p>Security Vault is an online password and secure-file manager from TURUBA Technologies. It also includes password generation, protected security-code storage and account security controls, plus Secure Notes and Money Ledger in the Android app.</p>
+            <p>Security Vault is a password and secure-file manager from TURUBA Technologies. It also includes password generation, protected security-code storage, account security controls, Secure Notes and Money Ledger on Android and the web.</p>
           </details>
           <details>
             <summary>What can I keep in Secure Notes?</summary>
-            <p>Secure Notes lets you keep private notes in the Android app, organize them with categories and tags, and pin important entries for easy access.</p>
+            <p>Secure Notes lets you keep private notes on Android or the web, organize them with categories and tags, and pin important entries for easy access.</p>
           </details>
           <details>
             <summary>What does Money Ledger do?</summary>
-            <p>Money Ledger helps you keep a personal record of money lent and received in the Android app. It records entries; it does not send or receive payments.</p>
+            <p>Money Ledger helps you keep a personal record of money lent, borrowed and repaid on Android or the web. It records entries; it does not send or receive payments.</p>
+          </details>
+          <details>
+            <summary>Can I preview secure files without downloading them?</summary>
+            <p>Yes. Supported images, PDFs and text files can be previewed in the app without choosing a separate download. Other files can be downloaded when you choose.</p>
+          </details>
+          <details>
+            <summary>Can TURUBA Technologies decrypt my vault data?</summary>
+            <p>Vault content is encrypted on the server, but the service holds the decryption key so it can show content after you unlock your vault. This is not a zero-knowledge service. See our <a href="security.html">Security page</a> for details.</p>
           </details>
           <details>
             <summary>Can Security Vault generate passwords?</summary>
@@ -304,8 +315,16 @@
       </div>
     </section>
 <section class="section resource-section" aria-labelledby="guides-heading">
-<div class="container"><div class="section-heading"><div class="eyebrow">PASSWORD GUIDES</div><h2 id="guides-heading">Get more from your password manager.</h2><p>Understand the tools and build a workflow for managing your accounts.</p></div>
-<div class="resource-grid"><a class="resource-card" href="password-manager-guide.html"><h3>What is a password manager?</h3><p>Learn what a vault does, what to check before choosing one, and how to get started.</p><span>Read the guide →</span></a><a class="resource-card" href="password-generator-guide.html"><h3>How to use a password generator</h3><p>Choose your settings, generate a credential and update the account where you use it.</p><span>Read the guide →</span></a></div></div></section>
+<div class="container"><div class="section-heading"><div class="eyebrow">FEATURE GUIDES</div><h2 id="guides-heading">Learn what every vault tool does.</h2><p>Explore the features, how to use them, and what each one does not do.</p></div>
+<div class="resource-grid">
+  <a class="resource-card" href="password-manager-guide.html"><h3>What is a password manager?</h3><p>Learn what a vault does, what to check before choosing one, and how to get started.</p><span>Read the guide →</span></a>
+  <a class="resource-card" href="password-generator-guide.html"><h3>How to use a password generator</h3><p>Choose your settings, generate a credential and update the account where you use it.</p><span>Read the guide →</span></a>
+  <a class="resource-card" href="security-codes-guide.html"><h3>What are Security Codes?</h3><p>Keep backup and recovery codes organized so you can find them when you need them.</p><span>Read the guide →</span></a>
+  <a class="resource-card" href="secure-files-guide.html"><h3>What are Secure Files?</h3><p>Understand encrypted file storage, supported previews, downloads and deletion.</p><span>Read the guide →</span></a>
+  <a class="resource-card" href="secure-notes-guide.html"><h3>What are Secure Notes?</h3><p>Save private notes and organize them with categories, tags and pins.</p><span>Read the guide →</span></a>
+  <a class="resource-card" href="money-ledger-guide.html"><h3>What is Money Ledger?</h3><p>Record money lent or borrowed, due dates, repayments and remaining balances.</p><span>Read the guide →</span></a>
+  <a class="resource-card" href="account-protection-guide.html"><h3>How do account protections work?</h3><p>Learn about two-factor authentication, biometric unlock, vault locking and sessions.</p><span>Read the guide →</span></a>
+</div></div></section>
   </main>
 
   <footer class="footer">
@@ -330,6 +349,7 @@
       </div>
       <div class="footer-link-group">
         <span>Company</span>
+        <a href="https://www.instagram.com/turubatechnologies" target="_blank" rel="noopener noreferrer" aria-label="TURUBA Technologies on Instagram">Instagram ↗</a>
         <a href="about.html">About</a>
         <a href="security.html">Security</a>
         <a href="contact.html">Contact</a>

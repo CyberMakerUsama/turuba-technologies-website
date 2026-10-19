@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How Account Protections Work | Security Vault</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Learn about Security Vault's account verification, optional 2FA, biometric access, vault locking, session controls and recovery.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://turubatechnologies.com/account-protection-guide.html">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="TURUBA Technologies">
+  <meta property="og:title" content="How Account Protections Work | Security Vault">
+  <meta property="og:description" content="Learn about Security Vault's account verification, optional 2FA, biometric access, vault locking, session controls and recovery.">
+  <meta property="og:url" content="https://turubatechnologies.com/account-protection-guide.html">
+  <meta property="og:image" content="https://turubatechnologies.com/assets/security-vault-logo.png">
+  <meta property="og:image:alt" content="Security Vault logo">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="How Account Protections Work | Security Vault">
+  <meta name="twitter:description" content="Learn about Security Vault's account verification, optional 2FA, biometric access, vault locking, session controls and recovery.">
+  <meta name="twitter:image" content="https://turubatechnologies.com/assets/security-vault-logo.png">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://turubatechnologies.com/account-protection-guide.html#webpage",
+      "url": "https://turubatechnologies.com/account-protection-guide.html",
+      "name": "How Account Protections Work | Security Vault",
+      "description": "Learn about Security Vault's account verification, optional 2FA, biometric access, vault locking, session controls and recovery.",
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://turubatechnologies.com/account-protection-guide.html#article",
+      "headline": "How do Security Vault account protections work?",
+      "description": "Learn about Security Vault's account verification, optional 2FA, biometric access, vault locking, session controls and recovery.",
+      "mainEntityOfPage": {
+        "@id": "https://turubatechnologies.com/account-protection-guide.html#webpage"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "TURUBA Technologies",
+        "url": "https://turubatechnologies.com/about.html"
+      },
+      "dateModified": "2026-10-20",
+      "inLanguage": "en"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://turubatechnologies.com/account-protection-guide.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://turubatechnologies.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Security Vault",
+          "item": "https://turubatechnologies.com/security-vault.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Account protection",
+          "item": "https://turubatechnologies.com/account-protection-guide.html"
+        }
+      ]
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="/" aria-label="TURUBA Technologies home">
+        <img class="company-logo" src="assets/turuba-technologies-logo.png" alt="TURUBA Technologies">
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="/#products">Product</a>
+        <a href="about.html">About</a>
+        <a href="security.html">Security</a>
+        <a href="support.html">Support</a>
+        <a class="nav-cta" href="https://vps.turubatechnologies.com/" target="_blank" rel="noopener noreferrer">Open Vault <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+  </header>
+  <main class="legal-page guide-page">
+    <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="security-vault.html">Security Vault</a><span aria-hidden="true">/</span><span aria-current="page">Account protection</span></nav>
+    <article>
+      <h1>How do Security Vault account protections work?</h1>
+      <p>Security Vault uses several controls to protect account access. Each control has a different job, so it helps to understand how they work together.</p>
+      <h2>Sign-in and vault access</h2>
+      <p>Your account password is used to sign in. Your master password unlocks protected vault areas. Security Vault stores these passwords as bcrypt hashes. Vault sessions expire, and repeated failed unlock attempts are limited.</p>
+      <h2>Optional two-factor authentication</h2>
+      <p>When enabled, authenticator-based two-factor authentication asks for a time-based code during sign-in. That adds a step beyond your account password. Keep your recovery options up to date before you rely on it.</p>
+      <h2>Biometric access on supported devices</h2>
+      <p>On a supported mobile device, you can enable biometric login and vault unlock. Your device performs the biometric check. Biometric access is an account convenience feature; it does not make server-stored vault content end-to-end encrypted.</p>
+      <h2>Sessions, locking and activity</h2>
+      <p>Vault auto-lock reduces the time an unlocked vault remains available. Active-session controls let you review and revoke sign-ins, while security activity and alerts help you notice account events. If a device is lost, review your sessions and update your account credentials promptly.</p>
+      <h2>Recovery and encryption limits</h2>
+      <p>Account recovery can help restore access according to the available verification options. The service still holds the key for server-side encryption of vault content; learn exactly what that means on our <a href="security.html">Security page</a>.</p>
+      <p>Explore <a href="security-codes-guide.html">Security Codes</a> for storing backup codes from other services, or return to <a href="security-vault.html#guides-heading">all feature guides</a>.</p>
+      <p class="guide-byline">By <a href="about.html">TURUBA Technologies</a> · Updated <time datetime="2026-10-20">October 20, 2026</time></p>
+    </article>
+  </main>
+  <footer class="footer">
+    <div class="container legal-footer">
+      <a class="brand" href="/" aria-label="TURUBA Technologies home">
+        <img class="company-logo footer-company-logo" src="assets/turuba-technologies-logo.png" alt="TURUBA Technologies">
+      </a>
+      <p>Building useful technology with purpose.</p>
+      <nav class="legal-footer-links" aria-label="Footer navigation">
+        <a href="https://www.instagram.com/turubatechnologies" target="_blank" rel="noopener noreferrer" aria-label="TURUBA Technologies on Instagram">Instagram ↗</a>
+        <a href="security-vault.html">Security Vault</a>
+        <a href="password-manager-guide.html">Password manager guide</a>
+        <a href="password-generator-guide.html">Password generator guide</a>
+        <a href="security.html">Security</a>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+      <div class="copyright">© <span id="year"></span> TURUBA Technologies. All rights reserved.</div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

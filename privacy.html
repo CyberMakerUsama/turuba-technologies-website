@@ -58,18 +58,18 @@
   <main class="legal-page">
     <a class="back-link" href="/">← Back to TURUBA Technologies</a>
     <h1>Privacy Policy</h1>
-    <p><strong>Last updated:</strong> September 24, 2026</p>
+    <p><strong>Last updated:</strong> October 20, 2026</p>
     <p>This Privacy Policy explains how TURUBA Technologies handles information for its websites and products, including Security Vault. It is intended to describe the current product and operational data flows accurately and may be updated as the service evolves.</p>
 
     <h2>1. Information We Collect</h2>
-    <p>Depending on the features you use, Security Vault may process your name or username, email address, account and authentication information, security settings, security activity and alert records, active-session information, recovery information, and information you intentionally store in the vault such as saved credentials, security codes, notes, and encrypted files.</p>
+    <p>Depending on the features you use, Security Vault may process your name or username, email address, account and authentication information, security settings, security activity and alert records, active-session information, recovery information, and information you intentionally store in the vault such as saved credentials, security codes, notes, money records and encrypted files.</p>
     <p>We may also process technical information needed to operate and secure the service, such as IP address, device or browser information, request timestamps, session identifiers, and security/rate-limiting events.</p>
 
     <h2>2. How We Use Information</h2>
     <p>We use information to create and authenticate accounts; verify email ownership; provide password, security-code and secure-file functionality; send authentication and recovery messages; maintain vault locking and session controls; detect and prevent abuse; maintain security logs and alerts; respond to support requests; troubleshoot service problems; and meet applicable legal or security obligations.</p>
 
     <h2>3. Security Vault Data</h2>
-    <p>Security Vault is designed to apply security controls to stored credentials and files. Passwords are protected using password hashing, and vault data/files are protected using encryption mechanisms implemented by the service. Data is transmitted over HTTPS in production. We do not describe these controls as an absolute guarantee of security.</p>
+    <p>Account and master passwords are stored as bcrypt hashes. Saved vault passwords, security codes, notes, money entries and file contents are encrypted on the server using Fernet. The service holds the encryption key and decrypts vault content to provide authorized access; it is not end-to-end or zero-knowledge encryption. Data is transmitted over HTTPS in production. We do not describe these controls as an absolute guarantee of security.</p>
     <p>You are responsible for ensuring that you are authorized to store any information you place in the service and for protecting your account, master password, recovery information, and authentication devices.</p>
 
     <h2>4. Email and Service Providers</h2>
@@ -108,6 +108,7 @@
       </a>
       <p>Building useful technology with purpose.</p>
       <nav class="legal-footer-links" aria-label="Footer navigation">
+        <a href="https://www.instagram.com/turubatechnologies" target="_blank" rel="noopener noreferrer" aria-label="TURUBA Technologies on Instagram">Instagram ↗</a>
         <a href="security-vault.html">Security Vault</a>
         <a href="password-manager-guide.html">Password manager guide</a>
         <a href="password-generator-guide.html">Password generator guide</a>

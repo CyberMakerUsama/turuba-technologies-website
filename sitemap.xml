@@ -2,19 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://turubatechnologies.com/</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-20</lastmod>
   </url>
   <url>
     <loc>https://turubatechnologies.com/security-vault.html</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-20</lastmod>
   </url>
   <url>
     <loc>https://turubatechnologies.com/about.html</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-20</lastmod>
   </url>
   <url>
     <loc>https://turubatechnologies.com/security.html</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-20</lastmod>
   </url>
   <url>
     <loc>https://turubatechnologies.com/support.html</loc>
@@ -26,7 +26,7 @@
   </url>
   <url>
     <loc>https://turubatechnologies.com/privacy.html</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-20</lastmod>
   </url>
   <url>
     <loc>https://turubatechnologies.com/terms.html</loc>
@@ -38,10 +38,30 @@
   </url>
   <url>
     <loc>https://turubatechnologies.com/password-manager-guide.html</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-20</lastmod>
   </url>
   <url>
     <loc>https://turubatechnologies.com/password-generator-guide.html</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-20</lastmod>
+  </url>
+  <url>
+    <loc>https://turubatechnologies.com/security-codes-guide.html</loc>
+    <lastmod>2026-10-20</lastmod>
+  </url>
+  <url>
+    <loc>https://turubatechnologies.com/secure-files-guide.html</loc>
+    <lastmod>2026-10-20</lastmod>
+  </url>
+  <url>
+    <loc>https://turubatechnologies.com/secure-notes-guide.html</loc>
+    <lastmod>2026-10-20</lastmod>
+  </url>
+  <url>
+    <loc>https://turubatechnologies.com/money-ledger-guide.html</loc>
+    <lastmod>2026-10-20</lastmod>
+  </url>
+  <url>
+    <loc>https://turubatechnologies.com/account-protection-guide.html</loc>
+    <lastmod>2026-10-20</lastmod>
   </url>
 </urlset>

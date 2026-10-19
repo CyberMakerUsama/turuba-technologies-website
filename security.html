@@ -58,10 +58,11 @@
   <main class="legal-page">
     <a class="back-link" href="/">← Back to TURUBA Technologies</a>
     <h1>Security</h1>
-    <p><strong>Last updated:</strong> September 24, 2026</p>
+    <p><strong>Last updated:</strong> October 20, 2026</p>
     <p>Security Vault is built with a security-focused architecture and layered controls. The current product includes the protections described below. <a href="security-vault.html">View the Security Vault product overview</a>.</p>
     <ul>
-      <li>Password hashing and encrypted vault data handling</li>
+      <li>bcrypt hashing for account and master passwords</li>
+      <li>Server-side Fernet encryption for saved passwords, security codes, notes, money entries and files. Fernet uses AES-128-CBC for encryption and HMAC-SHA-256 for integrity protection.</li>
       <li>Encrypted secure-file storage and protected file access</li>
       <li>Email ownership verification for new accounts</li>
       <li>Two-factor authentication and recovery controls</li>
@@ -72,6 +73,8 @@
       <li>Rate limiting and abuse controls</li>
       <li>HTTPS for production web/API communication</li>
     </ul>
+    <h2>Who holds the encryption key?</h2>
+    <p>Security Vault currently holds its encryption key on the server and decrypts vault content to deliver it to you after authorized access. This is server-side encryption, not end-to-end or zero-knowledge encryption. An administrator with access to both the stored data and the server key could technically decrypt it. We do not claim that TURUBA Technologies is technically unable to read vault content.</p>
     <h2>Responsible Disclosure</h2>
     <p>If you identify a potential security vulnerability, please report it to <a href="mailto:support@turubatechnologies.com">support@turubatechnologies.com</a>. Please provide reproducible details and avoid accessing, changing, or deleting other users' data. Never send passwords, recovery codes, API tokens, vault tokens, encryption keys, or other secrets in an email.</p>
     <h2>Security Limitations</h2>
@@ -84,6 +87,7 @@
       </a>
       <p>Building useful technology with purpose.</p>
       <nav class="legal-footer-links" aria-label="Footer navigation">
+        <a href="https://www.instagram.com/turubatechnologies" target="_blank" rel="noopener noreferrer" aria-label="TURUBA Technologies on Instagram">Instagram ↗</a>
         <a href="security-vault.html">Security Vault</a>
         <a href="password-manager-guide.html">Password manager guide</a>
         <a href="password-generator-guide.html">Password generator guide</a>
