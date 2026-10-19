@@ -741,6 +741,8 @@ main.legal-page { background: #fff; border-color: #e2e8f0; }
 .hero h1 { max-width: 870px; margin: 0 auto 22px; font-size: clamp(48px, 6vw, 78px); }
 .hero-copy > p { max-width: 720px; margin-inline: auto; }
 .hero-actions { justify-content: center; }
+.hero-copy > .hero-social { margin-top: 20px; font-size: 14px; }
+.hero-social a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
 .hero-visual { width: min(100%, 900px); min-height: 360px; margin-inline: auto; }
 .hero-product-panel { width: min(760px, 96%); margin-inline: auto; text-align: left; }
 .orb-one { top: 4px; right: 11%; }
